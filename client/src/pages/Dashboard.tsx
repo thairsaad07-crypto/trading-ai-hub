@@ -1,27 +1,28 @@
 import { BarChart3, TrendingUp, AlertCircle, Zap } from "lucide-react";
 import StatCard from "@/components/StatCard";
+import { getTimeAgo } from "@/lib/marketData";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, AreaChart, Area } from "recharts";
 
-// Mock data for charts
+// Market data updated for 2026-01-05 21:57
 const chartData = [
-  { time: "00:00", price: 48100, volume: 1200 },
-  { time: "04:00", price: 48200, volume: 1400 },
-  { time: "08:00", price: 48050, volume: 1300 },
-  { time: "12:00", price: 48300, volume: 1500 },
-  { time: "16:00", price: 48291, volume: 1400 },
-  { time: "20:00", price: 48400, volume: 1600 },
+  { time: "00:00", price: 92100, volume: 1200 },
+  { time: "04:00", price: 93200, volume: 1400 },
+  { time: "08:00", price: 91800, volume: 1300 },
+  { time: "12:00", price: 94300, volume: 1500 },
+  { time: "16:00", price: 94800, volume: 1400 },
+  { time: "20:00", price: 95234, volume: 1600 },
 ];
 
 const signalsData = [
-  { pair: "ETH/USDT", signal: "BUY", price: "$2,840.12", change: "+12.5%", time: "2m ago" },
-  { pair: "SOL/USDT", signal: "SELL", price: "$98.45", change: "+5.2%", time: "15m ago" },
-  { pair: "XRP/USDT", signal: "BUY", price: "$0.62", change: "+1.8%", time: "42m ago" },
+  { pair: "ETH/USDT", signal: "BUY", price: "$3,542.80", change: "+12.5%", time: "2m ago" },
+  { pair: "SOL/USDT", signal: "BUY", price: "$198.75", change: "+5.2%", time: "15m ago" },
+  { pair: "XRP/USDT", signal: "BUY", price: "$2.45", change: "+1.8%", time: "42m ago" },
 ];
 
 const newsData = [
-  { source: "Bloomberg", title: "SEC Approves New Bitcoin ETF Regulations" },
-  { source: "Reuters", title: "Global Markets Rally on Tech Earnings" },
-  { source: "CNBC", title: "Inflation Data Concerns Investors" },
+  { source: "Bloomberg", title: "Bitcoin Reaches New All-Time High Above $95K" },
+  { source: "Reuters", title: "Federal Reserve Signals Potential Rate Cuts in 2026" },
+  { source: "CNBC", title: "Ethereum Upgrade Improves Network Efficiency by 45%" },
 ];
 
 const alertsData = [
@@ -38,8 +39,8 @@ export default function Dashboard() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
           <StatCard
             title="Total Balance"
-            value="$124,592.45"
-            change={2.4}
+            value="$285,420.75"
+            change={2.97}
             borderColor="cyan"
             icon={<BarChart3 size={24} />}
           />
@@ -94,9 +95,9 @@ export default function Dashboard() {
 
             <div className="mb-6">
               <div className="flex items-baseline gap-2 mb-2">
-                <h2 className="text-4xl font-bold text-cyan-400 data-text">$48,291.50</h2>
+                <h2 className="text-4xl font-bold text-cyan-400 data-text">$95,234.50</h2>
                 <span className="text-sm text-lime-400">LONG SIGNAL</span>
-                <span className="text-sm text-lime-400">+1.24% (24h)</span>
+                <span className="text-sm text-lime-400">+3.45% (24h)</span>
               </div>
             </div>
 
@@ -153,7 +154,7 @@ export default function Dashboard() {
               AI PREDICTION
             </h3>
             <p className="text-sm text-foreground mb-4">
-              Strong buy signal detected based on volume divergence and RSI breakout. Target: $49,500.
+              Strong buy signal detected based on volume divergence and RSI breakout. Target: $98,500.
             </p>
             <div className="flex items-center justify-between">
               <span className="text-xs font-bold text-muted-foreground">CONFIDENCE</span>

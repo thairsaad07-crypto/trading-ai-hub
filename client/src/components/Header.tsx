@@ -1,15 +1,19 @@
 import { Bell, Settings } from "lucide-react";
+import Clock from "./Clock";
 
 export default function Header() {
   return (
     <header className="fixed top-0 right-0 left-0 lg:left-64 h-16 bg-background border-b neon-border z-30">
       <div className="h-full px-6 flex items-center justify-between">
-        {/* Left Side - Title */}
-        <div className="hidden lg:block">
-          <h2 className="text-lg font-bold text-cyan-400" style={{ fontFamily: "'Orbitron', sans-serif" }}>
-            MARKET OVERVIEW
-          </h2>
-          <p className="text-xs text-muted-foreground">AI ANALYSIS MODULE: ACTIVE</p>
+        {/* Left Side - Title & Clock */}
+        <div className="hidden lg:flex items-center gap-6 flex-1">
+          <div>
+            <h2 className="text-lg font-bold text-cyan-400" style={{ fontFamily: "'Orbitron', sans-serif" }}>
+              MARKET OVERVIEW
+            </h2>
+            <p className="text-xs text-muted-foreground">AI ANALYSIS MODULE: ACTIVE</p>
+          </div>
+          <Clock />
         </div>
 
         {/* Right Side - Actions */}
