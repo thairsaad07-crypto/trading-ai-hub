@@ -20,9 +20,9 @@ interface Transaction {
 }
 
 const assetsData: Asset[] = [
-  { symbol: "BTC", amount: 0.5, value: 24145.75, change: 1.24, percentage: 45 },
-  { symbol: "ETH", amount: 10, value: 28401.20, change: 2.15, percentage: 30 },
-  { symbol: "SOL", amount: 250, value: 9862.50, change: -0.85, percentage: 15 },
+  { symbol: "BTC", amount: 0.5, value: 47617.25, change: 1.24, percentage: 45 },
+  { symbol: "ETH", amount: 10, value: 35428.00, change: 2.15, percentage: 30 },
+  { symbol: "SOL", amount: 250, value: 49687.50, change: -0.85, percentage: 15 },
   { symbol: "USDT", amount: 5000, value: 5000, change: 0, percentage: 10 },
 ];
 
@@ -48,7 +48,7 @@ const transactionsData: Transaction[] = [
     type: "BUY",
     pair: "BTC/USDT",
     amount: 0.1,
-    price: 48291.50,
+    price: 95234.50,
     total: 4829.15,
     date: "2024-01-05",
   },
@@ -57,7 +57,7 @@ const transactionsData: Transaction[] = [
     type: "SELL",
     pair: "ETH/USDT",
     amount: 5,
-    price: 2840.12,
+    price: 3542.80,
     total: 14200.60,
     date: "2024-01-04",
   },
@@ -66,7 +66,7 @@ const transactionsData: Transaction[] = [
     type: "BUY",
     pair: "SOL/USDT",
     amount: 50,
-    price: 98.45,
+    price: 198.75,
     total: 4922.50,
     date: "2024-01-03",
   },

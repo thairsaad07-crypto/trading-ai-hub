@@ -15,7 +15,7 @@ interface Analysis {
 const analysisHistory: Analysis[] = [
   {
     id: "1",
-    date: "2024-01-05 14:32",
+    date: "2026-01-06 10:45",
     pair: "BTC/USDT",
     pattern: "Head and Shoulders",
     signal: "SELL",
@@ -25,7 +25,7 @@ const analysisHistory: Analysis[] = [
   },
   {
     id: "2",
-    date: "2024-01-05 12:15",
+    date: "2026-01-06 09:30",
     pair: "ETH/USDT",
     pattern: "Double Bottom",
     signal: "BUY",
@@ -35,7 +35,7 @@ const analysisHistory: Analysis[] = [
   },
   {
     id: "3",
-    date: "2024-01-05 10:45",
+    date: "2026-01-06 08:15",
     pair: "SOL/USDT",
     pattern: "Triangle Breakout",
     signal: "BUY",
@@ -45,7 +45,7 @@ const analysisHistory: Analysis[] = [
   },
   {
     id: "4",
-    date: "2024-01-04 16:20",
+    date: "2026-01-05 20:40",
     pair: "XRP/USDT",
     pattern: "Ascending Triangle",
     signal: "BUY",
@@ -55,7 +55,7 @@ const analysisHistory: Analysis[] = [
   },
   {
     id: "5",
-    date: "2024-01-04 13:50",
+    date: "2026-01-05 18:10",
     pair: "ADA/USDT",
     pattern: "Wedge Pattern",
     signal: "HOLD",
@@ -65,7 +65,7 @@ const analysisHistory: Analysis[] = [
   },
   {
     id: "6",
-    date: "2024-01-04 11:30",
+    date: "2026-01-05 15:50",
     pair: "DOGE/USDT",
     pattern: "Cup and Handle",
     signal: "BUY",

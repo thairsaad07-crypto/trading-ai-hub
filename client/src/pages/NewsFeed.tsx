@@ -16,7 +16,7 @@ const newsData: NewsItem[] = [
   {
     id: "1",
     source: "Bloomberg",
-    title: "SEC Approves New Bitcoin ETF Regulations",
+    title: "Bitcoin Reaches New All-Time High Above $95K",
     description:
       "The Securities and Exchange Commission has approved new regulations for Bitcoin ETF trading, potentially opening doors for institutional investors.",
     impact: "HIGH",
@@ -27,7 +27,7 @@ const newsData: NewsItem[] = [
   {
     id: "2",
     source: "Reuters",
-    title: "Global Markets Rally on Tech Earnings",
+    title: "Federal Reserve Signals Potential Rate Cuts in 2026",
     description:
       "Major technology companies reported better-than-expected earnings, driving a rally across global markets including cryptocurrency.",
     impact: "MEDIUM",
@@ -38,7 +38,7 @@ const newsData: NewsItem[] = [
   {
     id: "3",
     source: "CNBC",
-    title: "Inflation Data Concerns Investors",
+    title: "Ethereum Upgrade Improves Network Efficiency by 45%",
     description:
       "Latest inflation data shows higher-than-expected increases, raising concerns about future monetary policy decisions.",
     impact: "HIGH",
