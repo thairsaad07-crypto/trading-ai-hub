@@ -1,0 +1,25 @@
+{
+  "name": "trading-ai-hub-binance",
+  "version": "1.0.0",
+  "description": "Real-Time Crypto Price Server with Binance WebSocket",
+  "main": "binance-server.js",
+  "scripts": {
+    "start": "node binance-server.js",
+    "dev": "node binance-server.js"
+  },
+  "keywords": [
+    "binance",
+    "websocket",
+    "crypto",
+    "real-time",
+    "trading"
+  ],
+  "author": "Trading AI Hub",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "ws": "^8.14.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {}
+}
