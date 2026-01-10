@@ -60,7 +60,8 @@ export default function Markets() {
       {!loading && filteredPrices.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredPrices.map((market) => {
-            const isPositive = parseFloat(market.change24h.toString()) >= 0;
+            const change24hValue = typeof market.change24h === 'string' ? parseFloat(market.change24h) : market.change24h;
+            const isPositive = change24hValue >= 0;
             const changeColor = isPositive ? 'text-green-400' : 'text-red-400';
             const changeIcon = isPositive ? <TrendingUp className="w-4 h-4" /> : <TrendingDown className="w-4 h-4" />;
 
@@ -76,7 +77,7 @@ export default function Markets() {
                   </h3>
                   <div className={`flex items-center gap-1 ${changeColor}`}>
                     {changeIcon}
-                    <span className="text-sm">{market.change24h.toFixed(2)}%</span>
+                    <span className="text-sm">{change24hValue.toFixed(2)}%</span>
                   </div>
                 </div>
 
